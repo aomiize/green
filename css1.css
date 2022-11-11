@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: san-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #111318;
+}
+header {
+    position: absolute;
+    top: 150px;
+    left: -50px;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+body header .logo img { 
+    width: auto;
+    height: 40px;
+}
+body header .logo  {
+    width: auto;
+    height: 40px;
+    overflow: hidden;
+}
+header ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+header ul li {
+    list-style: none;
+    margin:0 20px;
+    color: beige;
+    cursor: pointer;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 10px;
+}
+header ul li a:hover,
+header ul li a:active {
+ background: #8ca0e0;
+ color: #303C5B;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section #Bg  {
+    mix-blend-mode: screen;
+    vertical-align: middle;
+    width: 400px;
+    height: auto;
+    top: 130px;
+    left: 480px;
+}
+section #mmak1  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+section #mmak2  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#8ca0e0,transparent);
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #303C5B;
+    z-index: 9;
+    transform: translate(200 px);
+    font-family: Helvetica;
+    cursor: pointer;
+}
+.sec {
+    position: relative;
+    padding: 200px;
+    background: #8ca0e0;
+    size: 120px;
+}
+้.sec h2{
+    color:#303C5B;
+    margin-bottom:10px;
+    text-size-adjust: 200 px;
+}
+.sec p {
+    color: #303C5B;
+}
